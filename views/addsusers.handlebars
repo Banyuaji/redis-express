@@ -1,0 +1,25 @@
+<h1>add user</h1>
+{{#if error}} <span>Error</span> {{/if}}
+<form action="/user/add" method="POST">
+    <div class="form-group">
+        <label for="">ID</label>
+        <input class="form-control" type="text" name="id" id="id" placeholder="Add id">
+    </div>
+    <div class="form-group">
+        <label for="">Firstname</label>
+        <input class="form-control" type="text" name="first_name" id="id" placeholder="First name">
+    </div>
+    <div class="form-group">
+        <label for="">Lastname</label>
+        <input class="form-control" type="text" name="last_name" id="id" placeholder="Last name">
+    </div>
+    <div class="form-group">
+        <label for="">Email</label>
+        <input class="form-control" type="text" name="email" id="id" placeholder="Email">
+    </div>
+    <div class="form-group">
+        <label for="">Phone</label>
+        <input class="form-control" type="text" name="phone" id="id" placeholder="Phone">
+    </div>
+    <input class="btn btn-secondary " type="submit" value="Sumbit">
+</form>
